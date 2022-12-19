@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Downloader</title>
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">
+            <span class="fa fa-home"></span>Home</a>
+        <a href="#about"><span class="fa fa-user"></span>About</a>
+        <div class="dropdown">
+            <button class="dropbtn"></span>
+                  <span class="fa fa-download"></span>Downloader
+                </button>
+            <div class="dropdown-content">
+                <a href="#igdwld"><span class="fa fa-caret-right"></span> Instagram video downloader </a>
+                <a href="#fbdwld"><span class="fa fa-caret-right"></span>facebook video downloader </a>
+                <a href="#ytdwld"><span class="fa fa-caret-right"></span>youtube video downloader</a>
+            </div>
+        </div>
+        <a href="#dev"><span class="fa fa-male" aria-hidden="true"></span>developer</a>
+        <a href="#login"><span class="fa fa-power-off"></span>Login</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
+    </div>
+    <div class="body">
+        <div id="instagram">
+            <h1 class="instahead">
+                <img src="instagram_logo.jpg" width="85">Instagram downloader
+            </h1>
+
+            <!-- ################################################## -->
+            <form class="search-box" action="https://b6e8605a-1960-45ef-b578-dfa0fd75934c.id.repl.co/download">
+                <input name="url" type="text" id="keyword" autocomplete="off" placeholder="paste the URL of Instagram..." />
+                <input type="submit" value="Download">
+            </form>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </div>
+    <div id="about">
+        <fieldset>
+            <legend>About</legend>
+            Instagram video download serivce by SaveFrom allows downloading images and videos from the Instagram online. It is a really simple downloader that works perfectly with any browser on a PC or a mobile device. Using it you can save Reels videos for free
+            and download images from Instagram in high quality and with no limits. For any convenience, we have also developed an IG video download extension for PC browsers and a very smart app for all Android users. See the details below. Instagram
+            video download serivce by SaveFrom allows downloading images and videos from the Instagram online. It is a really simple downloader that works perfectly with any browser on a PC or a mobile device. Using it you can save Reels videos for free
+            and download images from Instagram in high quality and with no limits. For any convenience, we have also developed an IG video download extension for PC browsers and a very smart app for all Android users. See the details below.
+        </fieldset>
+    </div>
+
+
+    <div id="dev">
+        <div class="card">
+            <legend>developer</legend>
+            <div class="lines"></div>
+            <div class="imgbx">
+                <img src="IMG_20221030_104011.jpg"></div>
+            <div class="content">
+                <div class="details">
+                    <h2>SOURAV SINGH<br><span>UI/UX Designer</span></h2>
+                    <div class="data">
+                        <h3 class="instahead">
+                            <img src="instagram_logo.jpg" width="95">Follow
+                            <h3><img src="linkdedin.png" width="50">Follow
+                            </h3>
+                            <h3><img src="GitHub-logo.png" width="50">Follow</h3>
+                    </div>
+                    <!-- <div class="actionbtn">
+                    <button>FOLLOW</button>
+                    <button>message</button>
+                </div> -->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="Login">
+        <div class="Login">
+            <h2 id="txt">Login</h2>
+            <div class="inputBox">
+                <input type="text" placeholder="username">
+            </div>
+            <div class="inputBox">
+                <input type="password" placeholder="password">
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Login" id="btn">
+            </div>
+            <div class="group">
+                <a href="#">forgot password </a>
+                <a href="#">signup </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="colors">
+        <span class="active" onclick="changecolor('#1dd1a1')
+        " style="--clr:#1dd1a1;"></span>
+        <span onclick="changecolor('#ff6b6b')" style="--clr:#ff6b6b;"></span>
+        <span onclick="changecolor('#2e86de')" style="--clr:#2e86de;"></span>
+        <span onclick="changecolor('#f368e0')" style="--clr:#f368e0;"></span>
+        <span onclick="changecolor('#ff9f43')" style="--clr:#ff9f43;"></span>
+    </div>
+    <script>
+        let btn = document.getElementById('btn');
+        let txt = document.getElementById('txt');
+
+        function changecolor(color) {
+            document.body.style.background = color;
+            btn.style.background = color;
+            txt.style.borderColor = color;
+        }
+    </script>
+</body>
+
+</html>
